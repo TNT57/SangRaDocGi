@@ -1,0 +1,8 @@
+{
+  "measured": false,
+  "proseSyllablesPerMinute": 220,
+  "verseSyllablesPerMinute": 120,
+  "measuredBy": null,
+  "measuredOn": null,
+  "note": "Placeholder guesses. Nathan: time yourself on 5 prose and 5 verse pieces (CLAUDE.md §8.4), put the averages here and set measured to true."
+}
