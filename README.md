@@ -13,14 +13,28 @@ A Vietnamese reading site: open a crate (CS:GO style) and get one short public-d
 
 Import this repo at **vercel.com/new** and press Deploy. Nothing else is needed. Details and optional counter/analytics: [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
-## Run it
+## See it on your computer first (about 5 minutes)
 
-Needs Node 22.12+ and pnpm.
+1. **Install Node.js** (one time): download the "LTS" version from https://nodejs.org and install it.
+2. **Open a terminal** (Mac: Terminal app · Windows: PowerShell) and run:
 
-```sh
-pnpm install
-pnpm dev          # http://localhost:4321 — shows draft readings with a "BẢN NHÁP" banner
-```
+   ```sh
+   git clone https://github.com/TNT57/SangRaDocGi.git
+   cd SangRaDocGi
+   git checkout tnt57/zen-pascal-7jgwmq
+   corepack enable        # turns on pnpm (comes with Node). On Mac, if it asks: sudo corepack enable
+   pnpm install
+   pnpm dev
+   ```
+
+3. Open **http://localhost:4321** in your browser. You see the full site with the 12 draft readings (yellow "BẢN NHÁP" banner).
+   Edit any file and the page updates by itself. Stop with `Ctrl + C`.
+
+**On your phone:** run `pnpm dev:phone` instead of `pnpm dev`. It prints a "Network" address like `http://192.168.1.20:4321`. Open it on a phone connected to the **same Wi-Fi**.
+
+**See exactly what Vercel will publish** (only reviewed readings, so today an empty vault): `pnpm preview:site`, then open http://127.0.0.1:4321.
+
+To reset your opened crates and daily count: open the browser's developer tools → Application → Local Storage → delete the `ketsach:v1:*` keys (or use a private window).
 
 ## Check it
 

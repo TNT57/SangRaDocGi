@@ -42,3 +42,24 @@ test('no sideways scrolling on a small phone', async ({ browser }) => {
   }
   await context.close();
 });
+
+test('poem lines never wrap on a small phone, so they stay aligned', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 360, height: 740 } });
+  const page = await context.newPage();
+  for (const slug of ['kieu-o-lau-ngung-bich', 'ca-dao-non-song', 'day-thon-vi-da', 'thu-dieu']) {
+    await page.goto(`http://127.0.0.1:4321/bai/${slug}`);
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(150);
+    const result = await page.evaluate(() => {
+      const lines = [...document.querySelectorAll<HTMLElement>('.verse-line')];
+      const lh = parseFloat(getComputedStyle(lines[0]!).lineHeight);
+      return {
+        wrapped: lines.filter((l) => l.getBoundingClientRect().height > lh * 1.5).map((l) => l.textContent),
+        size: parseFloat(getComputedStyle(lines[0]!).fontSize),
+      };
+    });
+    expect(result.wrapped, slug).toEqual([]);
+    expect(result.size, slug).toBeGreaterThanOrEqual(15);
+  }
+  await context.close();
+});

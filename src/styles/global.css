@@ -688,7 +688,8 @@ a.card {
 /* ---------- Reading page (CLAUDE.md §7) ---------- */
 
 .reading {
-  width: min(100% - 32px, 38rem);
+  /* 12px side margins on small phones leave more room for long poem lines. */
+  width: min(100% - 24px, 38rem);
   margin-inline: auto;
   padding-top: 8px;
 }
@@ -762,17 +763,23 @@ a.card {
 
 .stanza {
   margin: 0 0 1.4em;
+  /* Set by the fit script in ReadingBody.astro so each poem line fits on one row. */
+  font-size: var(--verse-size, 1em);
+}
+
+/* While measuring, lines never wrap so their natural width can be read. */
+.is-measuring .verse-line {
+  white-space: nowrap;
+  width: max-content;
 }
 
 .verse-line {
   display: block;
-  /* Hanging indent: a long line that wraps on a phone continues further in. */
-  padding-left: 1.5em;
-  text-indent: -1.5em;
 }
 
+/* Lục bát: the 6-syllable line sits indented under the 8-syllable line. */
 .verse-line.is-indented {
-  padding-left: 3.25em;
+  padding-left: 1.75em;
 }
 
 .scene-break {

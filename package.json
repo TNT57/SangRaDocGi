@@ -15,7 +15,9 @@
     "data:pageviews": "tsx scripts/pageviews.ts",
     "data:normalize": "tsx scripts/normalize.ts",
     "data:check": "tsx scripts/check-data.ts",
-    "data:syllables": "tsx scripts/syllables.ts"
+    "data:syllables": "tsx scripts/syllables.ts",
+    "dev:phone": "astro dev --host",
+    "preview:site": "pnpm build && node scripts/serve-static.mjs"
   },
   "engines": {
     "node": ">=22.12.0"

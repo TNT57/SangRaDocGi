@@ -30,6 +30,7 @@ Browser: crate island (Preact) ── localStorage (opened, today's count)
 | Analytics | **GoatCounter** (no cookies → no banner) | Custom events for "read to end" (§10). Off when `PUBLIC_GOATCOUNTER_CODE` is empty |
 | Fonts | Self-hosted **Literata** (reading) + **Be Vietnam Pro** (UI) | Full Vietnamese diacritics, no calls to font servers |
 | Tests | **Vitest** (logic) + **Playwright** (phone-size browser tests) | |
+| Poem layout | Each line stays on one row: a small script shrinks the poem only when the longest line is wider than the screen (min 15px on small phones) | Wrapped lines break lục bát alignment |
 | Tone marks | **Classic style** (`hòa`, `khỏe`, `thủy`) | §8.5 item 5 needs one style. Change `TONE_STYLE` in `src/lib/text/tone.ts`, then run `pnpm data:normalize` |
 | Sound | None | Not in §5. Ask Nathan before adding |
 
@@ -107,6 +108,8 @@ Một chiếc thuyền câu bé tẻo teo.
 | Command | What it does |
 |---|---|
 | `pnpm dev` | Local site with drafts at http://localhost:4321 |
+| `pnpm dev:phone` | Same, reachable from a phone on the same Wi-Fi |
+| `pnpm preview:site` | Build exactly what production ships and serve it at http://127.0.0.1:4321 |
 | `pnpm build` | Production build (published readings only) |
 | `pnpm check` | Type checks |
 | `pnpm test` | Unit tests |
