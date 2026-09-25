@@ -46,6 +46,8 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
   const position = useRef(positionFor(IDLE_INDEX, 0.5));
   const centreIndex = useRef(IDLE_INDEX);
   const frame = useRef(0);
+  /** Saved at pick time, shown on screen only when the reel stops (no spoilers mid-spin). */
+  const pending = useRef<{ opened: Set<string>; daily: DailyState } | null>(null);
 
   // Load device state, counter and visit analytics once.
   useEffect(() => {
@@ -84,6 +86,11 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
   }, [daily, pool]);
 
   function reveal(r: Result) {
+    if (pending.current) {
+      setOpened(pending.current.opened);
+      setDaily(pending.current.daily);
+      pending.current = null;
+    }
     setPhase('revealed');
     setResult(r);
     setCount((c) => (c === null ? null : c + 1));
@@ -101,11 +108,11 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
     if (res.kind !== 'reading') return;
     const winner = res.reading;
 
-    // The result is decided and saved before any animation (CLAUDE.md §6.1).
+    // The result is decided and saved before any animation (CLAUDE.md §6.1), so a reload
+    // mid-spin cannot give a free crate. The screen only shows it when the reel stops.
     const nextOpened = new Set(opened).add(winner.slug);
     const nextDaily = recordOpen(daily, winner.slug);
-    setOpened(nextOpened);
-    setDaily(nextDaily);
+    pending.current = { opened: nextOpened, daily: nextDaily };
     saveOpened(nextOpened);
     saveDaily(nextDaily);
     reportOpen();

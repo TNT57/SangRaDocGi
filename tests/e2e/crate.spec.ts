@@ -78,11 +78,17 @@ test.describe('spin animation', () => {
     const started = Date.now();
     await page.getByRole('button', { name: /KHAI MỞ KÉT/ }).click();
     await expect(page.getByRole('button', { name: 'ĐANG MỞ KHÓA...' })).toBeVisible();
+    // No spoilers while the reel is moving: today's list and the inventory wait for the stop.
+    await expect(page.locator('#hom-nay')).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: `Đã mở 0 / ${POOL}` })).toBeVisible();
+    await expect(page.locator('.inventory-grid a.card')).toHaveCount(0);
     await expect(page.getByRole('tab', { name: 'Tiếng cười' })).toBeDisabled();
     await expect(page.getByRole('dialog')).toBeVisible({ timeout: 10_000 });
     const took = Date.now() - started;
     expect(took).toBeGreaterThan(4000);
     expect(took).toBeLessThan(8000);
+    await expect(page.locator('#hom-nay li')).toHaveCount(1);
+    await expect(page.getByRole('heading', { name: `Đã mở 1 / ${POOL}` })).toBeVisible();
     // The winner in the popup is the card under the centre line.
     const winner = await page.getByRole('dialog').locator('.card').getAttribute('data-slug');
     const centred = await page.evaluate(() => {
