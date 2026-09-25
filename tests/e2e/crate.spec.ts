@@ -1,6 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
 
-const POOL = 12;
 
 async function seed(page: Page, opts: { opened?: string[]; todayOpens?: number }) {
   await page.addInitScript((o) => {
@@ -18,6 +17,8 @@ test.describe('home + crate', () => {
 
   test('shows tabs, the crate button with 10 left, and a locked inventory', async ({ page }) => {
     await page.goto('/');
+    const POOL = await page.locator('.inventory-grid .card').count();
+    expect(POOL).toBeGreaterThan(0);
     await expect(page.getByRole('tab', { name: 'Tất cả' })).toHaveAttribute('aria-selected', 'true');
     await expect(page.getByRole('tab')).toHaveCount(6);
     await expect(page.getByRole('button', { name: /KHAI MỞ KÉT · Còn 10 lượt/ })).toBeVisible();
@@ -27,6 +28,7 @@ test.describe('home + crate', () => {
 
   test('reduced motion: result shows at once, can be read, and unlocks in the inventory', async ({ page }) => {
     await page.goto('/');
+    const POOL = await page.locator('.inventory-grid .card').count();
     await page.getByRole('button', { name: /KHAI MỞ KÉT/ }).click();
     const dialog = page.getByRole('dialog');
     await expect(dialog).toBeVisible();
@@ -42,7 +44,8 @@ test.describe('home + crate', () => {
     await page.getByRole('link', { name: 'Đọc ngay' }).click();
     await expect(page).toHaveURL(/\/bai\/[a-z0-9-]+$/);
     await expect(page.locator('h1')).toBeVisible();
-    await expect(page.locator('.verse-line').first()).toBeVisible();
+    // Poem lines or prose paragraphs, depending on the reading.
+    await expect(page.locator('.reading-body .verse-line, .reading-body > p:not(.end-mark)').first()).toBeVisible();
   });
 
   test('after 10 crates today: "Mai mở tiếp" and a link to today\'s readings', async ({ page }) => {
@@ -54,8 +57,11 @@ test.describe('home + crate', () => {
   });
 
   test('theme fully opened: message and a suggested theme', async ({ page }) => {
-    await seed(page, { opened: ['thu-dieu', 'qua-deo-ngang', 'day-thon-vi-da'] });
     await page.goto('/');
+    await page.getByRole('tab', { name: 'Thiên nhiên' }).click();
+    const slugs = await page.locator('.inventory-grid .card').evaluateAll((els) => els.map((e) => (e as HTMLElement).dataset.slug));
+    await page.evaluate((s) => localStorage.setItem('ketsach:v1:opened', JSON.stringify(s)), slugs);
+    await page.reload();
     await page.getByRole('tab', { name: 'Thiên nhiên' }).click();
     await expect(page.getByText('Bạn đã mở hết chủ đề này.')).toBeVisible();
     await page.getByRole('button', { name: /Thử chủ đề/ }).click();
@@ -75,6 +81,7 @@ test.describe('home + crate', () => {
 test.describe('spin animation', () => {
   test('spins for about 5 s, then shows the result', async ({ page }) => {
     await page.goto('/');
+    const POOL = await page.locator('.inventory-grid .card').count();
     const started = Date.now();
     await page.getByRole('button', { name: /KHAI MỞ KÉT/ }).click();
     await expect(page.getByRole('button', { name: 'ĐANG MỞ KHÓA...' })).toBeVisible();

@@ -14,6 +14,7 @@ const start = new Date(Date.UTC(end.getUTCFullYear() - 1, end.getUTCMonth() + 1,
 const fmt = (d: Date) => `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, '0')}${String(d.getUTCDate()).padStart(2, '0')}`;
 
 const cache = new Map<string, number>();
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 for (const [slug, entry] of Object.entries(fame)) {
   const article = entry.wikiArticle;
   if (!article) {
@@ -22,9 +23,15 @@ for (const [slug, entry] of Object.entries(fame)) {
   }
   if (!cache.has(article)) {
     const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/vi.wikipedia/all-access/user/${encodeURIComponent(article.replace(/ /g, '_'))}/monthly/${fmt(start)}/${fmt(end)}`;
-    const res = await fetch(url, { headers: { 'user-agent': 'KetSach/0.1 (public-domain reading site; data prep script)' } });
-    if (!res.ok) {
-      console.log(`fail ${slug}: ${article} → HTTP ${res.status}`);
+    let res: Response | null = null;
+    for (let attempt = 0; attempt < 8; attempt++) {
+      res = await fetch(url, { headers: { 'user-agent': 'KetSach/0.1 (public-domain reading site; data prep script)' } });
+      await sleep(1500);
+      if (res.status !== 429) break;
+      await sleep(Math.max(Number(res.headers.get('retry-after')) || 0, 5 * (attempt + 1)) * 1000);
+    }
+    if (!res?.ok) {
+      console.log(`fail ${slug}: ${article} → HTTP ${res?.status}${res?.status === 404 ? ' (no such article: fix wikiArticle)' : ''}`);
       continue;
     }
     const body = (await res.json()) as { items: { views: number }[] };

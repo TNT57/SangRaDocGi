@@ -49,6 +49,6 @@ pnpm data:check   # which readings pass the §8.5 checklist, and launch readines
 
 ## Status
 
-The site (all 8 MVP features in CLAUDE.md §5) is built and tested. The **reading pool is not ready**: the 12 readings in `src/content/readings/` are unreviewed drafts, so a production build currently ships an empty vault on purpose. See the Phase 0 guide.
+The site (all 8 MVP features in CLAUDE.md §5) is built and tested. The pool has **145 draft readings** (138 from *Quốc văn trích diễm* via Wikisource, at least 17 per theme). None is published yet: each still needs proofreading against the scan, a content tag and Nathan's review (§8.5), so a production build ships an empty vault on purpose. See the Phase 0 guide.
 
 Inspired by the feel of [truanayangi.com](https://truanayangi.com). No code, images, sounds or CSS were copied.

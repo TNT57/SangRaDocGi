@@ -11,7 +11,8 @@ import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { normalizeText } from '../src/lib/text/tone';
 import { READINGS_DIR, joinFrontmatter, splitFrontmatter } from './lib/files';
-import { cleanWikitext, diffLines } from './lib/wikitext';
+import { cleanWikitext, diffLines, extractFromHtml } from './lib/wikitext';
+import { pageUrl, parsePage } from './lib/wikisource';
 
 const { values, positionals } = parseArgs({ allowPositionals: true, options: { slug: { type: 'string' }, write: { type: 'boolean', default: false } } });
 const title = positionals[0];
@@ -20,16 +21,10 @@ if (!title) {
   process.exit(1);
 }
 
-const api = new URL('https://vi.wikisource.org/w/api.php');
-api.search = new URLSearchParams({ action: 'parse', page: title, prop: 'wikitext|revid', format: 'json', formatversion: '2', redirects: '1' }).toString();
-const res = await fetch(api, { headers: { 'user-agent': 'KetSach/0.1 (public-domain reading site; data prep script)' } });
-if (!res.ok) throw new Error(`Wikisource answered ${res.status}`);
-const json = (await res.json()) as { parse?: { title: string; revid: number; wikitext: string }; error?: { info: string } };
-if (!json.parse) throw new Error(json.error?.info ?? 'page not found');
-
-const text = normalizeText(cleanWikitext(json.parse.wikitext));
-const url = `https://vi.wikisource.org/wiki/${encodeURIComponent(json.parse.title.replace(/ /g, '_'))}?oldid=${json.parse.revid}`;
-console.log(`Fetched "${json.parse.title}" (revision ${json.parse.revid})\n${url}\n`);
+const page = await parsePage(title);
+const text = normalizeText(extractFromHtml(page.text) || cleanWikitext(page.wikitext));
+const url = pageUrl(page.title, page.revid);
+console.log(`Fetched "${page.title}" (revision ${page.revid})\n${url}\n`);
 
 const file = values.slug ? path.join(READINGS_DIR, `${values.slug}.md`) : null;
 if (!file || !fs.existsSync(file)) {
@@ -43,7 +38,10 @@ if (!diffs.length) console.log('Our text matches Wikisource line by line.');
 for (const d of diffs) console.log(`line ${d.line}\n  ours:       ${d.ours}\n  wikisource: ${d.theirs}`);
 
 if (values.write) {
-  const source = { ...(frontmatter.source as object), name: 'Wikisource tiếng Việt', url, revision: json.parse.revid };
-  fs.writeFileSync(file, joinFrontmatter({ ...frontmatter, source }, `${text}\n`));
+  const source = { ...(frontmatter.source as object), name: 'Wikisource tiếng Việt', url, revision: page.revid };
+  const notes = String(frontmatter.notes ?? '').includes('typed from memory')
+    ? `Text replaced with the Wikisource copy (${diffs.length} line(s) differed from the earlier memory draft). Still proofread against a second copy.`
+    : frontmatter.notes;
+  fs.writeFileSync(file, joinFrontmatter({ ...frontmatter, source, notes }, `${text}\n`));
   console.log(`\nWrote ${path.relative(process.cwd(), file)}. Still proofread it against a second copy (§8.5 item 6).`);
 }

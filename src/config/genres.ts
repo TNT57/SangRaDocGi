@@ -3,7 +3,7 @@ export const GENRES = [
   { id: 'truyen', label: 'Truyện' },
   { id: 'tho', label: 'Thơ' },
   { id: 'dan-gian', label: 'Dân gian' },
-  { id: 'nghi-luan', label: 'Văn nghị luận' },
+  { id: 'nghi-luan', label: 'Văn xuôi' }, // essays, proclamations, travel notes, phú
 ] as const;
 
 export type GenreId = (typeof GENRES)[number]['id'];

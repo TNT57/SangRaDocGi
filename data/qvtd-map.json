@@ -1,0 +1,444 @@
+{
+ "1": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "2": {
+  "theme": "tieng-cuoi"
+ },
+ "3": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "4": {
+  "theme": "thien-nhien"
+ },
+ "5": {
+  "theme": "than-phan"
+ },
+ "6": {
+  "theme": "tieng-cuoi",
+  "flag": "Double meaning (Hồ Xuân Hương); decide if it fits \"adult pieces excluded\" (§14 #6)."
+ },
+ "7": {
+  "theme": "thien-nhien",
+  "flag": "Double meaning (Hồ Xuân Hương); decide if it fits \"adult pieces excluded\" (§14 #6)."
+ },
+ "8": {
+  "theme": "than-phan"
+ },
+ "9": {
+  "theme": "than-phan"
+ },
+ "10": {
+  "theme": "than-phan"
+ },
+ "11": {
+  "theme": "than-phan"
+ },
+ "12": {
+  "theme": "thien-nhien"
+ },
+ "13": {
+  "theme": "thien-nhien"
+ },
+ "14": {
+  "theme": "tinh-cam"
+ },
+ "15": {
+  "theme": "thien-nhien"
+ },
+ "16": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "17": {
+  "theme": "tinh-cam"
+ },
+ "18": {
+  "theme": "thien-nhien"
+ },
+ "19": {
+  "theme": "thien-nhien"
+ },
+ "20": {
+  "theme": "thien-nhien"
+ },
+ "21": {
+  "theme": "thien-nhien"
+ },
+ "22": {
+  "theme": "tieng-cuoi"
+ },
+ "23": {
+  "theme": "thien-nhien"
+ },
+ "24": {
+  "theme": "tinh-cam"
+ },
+ "25": {
+  "theme": "than-phan"
+ },
+ "26": {
+  "theme": "tieng-cuoi"
+ },
+ "27": {
+  "theme": "tieng-cuoi"
+ },
+ "28": {
+  "theme": "tieng-cuoi"
+ },
+ "29": {
+  "theme": "tieng-cuoi"
+ },
+ "30": {
+  "theme": "tieng-cuoi"
+ },
+ "31": {
+  "theme": "than-phan"
+ },
+ "32": {
+  "theme": "than-phan"
+ },
+ "33": {
+  "theme": "than-phan",
+  "flag": "Suicide attempt: consider the \"Nội dung nặng\" tag."
+ },
+ "34": {
+  "theme": "than-phan"
+ },
+ "35": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "36": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "37": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "38": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "39": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "40": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "41": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "42": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "43": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "44": {
+  "theme": "than-phan"
+ },
+ "45": {
+  "theme": "than-phan"
+ },
+ "46": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "47": {
+  "theme": "tieng-cuoi"
+ },
+ "48": {
+  "theme": "tieng-cuoi"
+ },
+ "49": {
+  "theme": "than-phan",
+  "flag": "About a courtesan; decide if it fits \"adult pieces excluded\" (§14 #6)."
+ },
+ "50": {
+  "theme": "tinh-cam"
+ },
+ "51": {
+  "theme": "than-phan"
+ },
+ "52": {
+  "theme": "thien-nhien"
+ },
+ "53": {
+  "theme": "than-phan",
+  "flag": "About a courtesan; decide if it fits \"adult pieces excluded\" (§14 #6)."
+ },
+ "54": {
+  "theme": "than-phan"
+ },
+ "55": {
+  "theme": "tieng-cuoi"
+ },
+ "57": {
+  "theme": "than-phan"
+ },
+ "58": {
+  "theme": "than-phan"
+ },
+ "59": {
+  "theme": "than-phan"
+ },
+ "60": {
+  "theme": "thien-nhien"
+ },
+ "61": {
+  "theme": "than-phan"
+ },
+ "62": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "63": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "64": {
+  "theme": "thien-nhien"
+ },
+ "65": {
+  "theme": "thien-nhien"
+ },
+ "66": {
+  "theme": "thien-nhien"
+ },
+ "67": {
+  "theme": "tinh-cam"
+ },
+ "68": {
+  "theme": "tinh-cam"
+ },
+ "69": {
+  "theme": "tinh-cam"
+ },
+ "70": {
+  "theme": "than-phan"
+ },
+ "71": {
+  "theme": "than-phan"
+ },
+ "72": {
+  "theme": "tinh-cam",
+  "translator": "Đoàn Thị Điểm"
+ },
+ "73": {
+  "theme": "tinh-cam",
+  "translator": "Đoàn Thị Điểm"
+ },
+ "74": {
+  "theme": "tinh-cam",
+  "translator": "Đoàn Thị Điểm"
+ },
+ "75": {
+  "theme": "than-phan"
+ },
+ "76": {
+  "theme": "than-phan"
+ },
+ "77": {
+  "theme": "tinh-cam"
+ },
+ "78": {
+  "theme": "tinh-cam"
+ },
+ "79": {
+  "theme": "tinh-cam"
+ },
+ "80": {
+  "theme": "than-phan"
+ },
+ "81": {
+  "theme": "than-phan",
+  "flag": "Abduction: consider the \"Nội dung nặng\" tag."
+ },
+ "82": {
+  "theme": "than-phan"
+ },
+ "83": {
+  "theme": "than-phan"
+ },
+ "84": {
+  "theme": "than-phan"
+ },
+ "85": {
+  "theme": "tinh-cam"
+ },
+ "86": {
+  "theme": "tinh-cam"
+ },
+ "87": {
+  "theme": "tinh-cam"
+ },
+ "88": {
+  "theme": "than-phan"
+ },
+ "89": {
+  "theme": "than-phan"
+ },
+ "90": {
+  "theme": "than-phan",
+  "flag": "Suicide: consider the \"Nội dung nặng\" tag."
+ },
+ "91": {
+  "theme": "than-phan"
+ },
+ "92": {
+  "theme": "than-phan"
+ },
+ "93": {
+  "theme": "tinh-cam"
+ },
+ "94": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "95": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "96": {
+  "theme": "tieng-cuoi"
+ },
+ "97": {
+  "theme": "tieng-cuoi"
+ },
+ "98": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "99": {
+  "theme": "dat-nuoc-lich-su",
+  "flag": "War dead: consider the \"Nội dung nặng\" tag."
+ },
+ "100": {
+  "theme": "dat-nuoc-lich-su",
+  "flag": "Deaths by fire: consider the \"Nội dung nặng\" tag."
+ },
+ "101": {
+  "theme": "tinh-cam",
+  "flag": "Exam essay (kinh nghĩa) with Hán text; may read like homework."
+ },
+ "102": {
+  "theme": "tinh-cam",
+  "flag": "Exam essay (văn sách) with Hán text; may read like homework."
+ },
+ "103": {
+  "theme": "dat-nuoc-lich-su",
+  "translated": true
+ },
+ "104": {
+  "theme": "tieng-cuoi",
+  "flag": "A list of couplets rather than one piece."
+ },
+ "105": {
+  "theme": "dat-nuoc-lich-su",
+  "translated": true
+ },
+ "106": {
+  "theme": "dat-nuoc-lich-su",
+  "translated": true
+ },
+ "107": {
+  "theme": "dat-nuoc-lich-su",
+  "translated": true
+ },
+ "108": {
+  "theme": "dat-nuoc-lich-su",
+  "translated": true
+ },
+ "109": {
+  "theme": "than-phan",
+  "translated": true
+ },
+ "110": {
+  "theme": "dat-nuoc-lich-su",
+  "translated": true
+ },
+ "111": {
+  "theme": "than-phan"
+ },
+ "112": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "113": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "114": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "115": {
+  "theme": "than-phan"
+ },
+ "116": {
+  "theme": "than-phan"
+ },
+ "117": {
+  "theme": "than-phan"
+ },
+ "118": {
+  "theme": "than-phan"
+ },
+ "119": {
+  "theme": "than-phan",
+  "genre": "truyen"
+ },
+ "120": {
+  "theme": "than-phan"
+ },
+ "121": {
+  "theme": "thien-nhien"
+ },
+ "122": {
+  "theme": "than-phan"
+ },
+ "123": {
+  "theme": "thien-nhien"
+ },
+ "124": {
+  "theme": "thien-nhien"
+ },
+ "125": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "126": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "127": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "128": {
+  "theme": "thien-nhien"
+ },
+ "129": {
+  "theme": "than-phan"
+ },
+ "130": {
+  "theme": "thien-nhien"
+ },
+ "131": {
+  "theme": "dat-nuoc-lich-su"
+ },
+ "132": {
+  "theme": "than-phan"
+ },
+ "133": {
+  "theme": "than-phan"
+ },
+ "134": {
+  "theme": "than-phan"
+ },
+ "135": {
+  "theme": "than-phan",
+  "title": "Cái cách cạnh tranh của người mình"
+ },
+ "136": {
+  "theme": "than-phan"
+ },
+ "137": {
+  "theme": "than-phan",
+  "genre": "truyen",
+  "flag": "Flood disaster, death: consider the \"Nội dung nặng\" tag."
+ },
+ "138": {
+  "theme": "tieng-cuoi",
+  "genre": "truyen"
+ },
+ "139": {
+  "theme": "than-phan",
+  "genre": "truyen"
+ }
+}

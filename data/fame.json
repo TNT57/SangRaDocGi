@@ -1,27 +1,27 @@
 {
   "thu-dieu": {
     "textbookCount": null,
-    "wikiArticle": "Thu điếu",
+    "wikiArticle": null,
     "pageviews12m": null,
     "pageviewsFetchedOn": null
   },
   "qua-deo-ngang": {
     "textbookCount": null,
-    "wikiArticle": null,
-    "pageviews12m": null,
-    "pageviewsFetchedOn": null
+    "wikiArticle": "Qua Đèo Ngang",
+    "pageviews12m": 534,
+    "pageviewsFetchedOn": "2026-09-25"
   },
   "day-thon-vi-da": {
     "textbookCount": null,
-    "wikiArticle": null,
-    "pageviews12m": null,
-    "pageviewsFetchedOn": null
+    "wikiArticle": "Đây thôn Vĩ Dạ",
+    "pageviews12m": 13471,
+    "pageviewsFetchedOn": "2026-09-25"
   },
   "banh-troi-nuoc": {
     "textbookCount": null,
-    "wikiArticle": null,
-    "pageviews12m": null,
-    "pageviewsFetchedOn": null
+    "wikiArticle": "Bánh trôi nước",
+    "pageviews12m": 101,
+    "pageviewsFetchedOn": "2026-09-25"
   },
   "tu-tinh-ii": {
     "textbookCount": null,
@@ -56,8 +56,8 @@
   "kieu-o-lau-ngung-bich": {
     "textbookCount": null,
     "wikiArticle": "Truyện Kiều",
-    "pageviews12m": null,
-    "pageviewsFetchedOn": null
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
   },
   "ca-dao-non-song": {
     "textbookCount": null,
@@ -68,6 +68,804 @@
   "nam-quoc-son-ha": {
     "textbookCount": null,
     "wikiArticle": "Nam quốc sơn hà",
+    "pageviews12m": 99155,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "det-vai": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "nguoi-bo-nhin": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cam-hung": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tho-nhan": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thoi-doi": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "qua-deo-ba-doi": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "canh-den-tran-vo": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "doi-nguoi-tham-thoat": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "khoc-bang-phi": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thang-long-thanh-hoai-co": {
+    "textbookCount": null,
+    "wikiArticle": "Thăng Long thành hoài cổ",
+    "pageviews12m": 4972,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "troi-hom-nho-nha": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "canh-thu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thu-am": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thu-vinh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ong-phong-da": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cho-troi-chua-thay": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "chung-than-thuy-kieu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "chuc-tet": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "dai-khon": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tat-nuoc": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "kieu-di-thanh-minh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "kieu-ban-minh-chuoc-cha": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "kieu-tu-tan-tu-ba-do-kieu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tu-hai-ra-hang": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "trung-vuong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "to-hien-thanh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "nuong-mi-e": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "huyen-tran-cong-chua": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vinh-hai-ba-trung": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vinh-trieu-au": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vinh-ba-phan-thi-thuan": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vinh-ong-nguyen-van-quyen": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vinh-ba-nguyen-thi-kim": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ban-than": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tu-trach-minh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "qua-cua-ngu-mon": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "trang-phao": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tho-lay-van-khoai": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "di-gia-di-tu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "gia-vo-nha-di-lam-quan": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vinh-kieu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "nui-ngu-hanh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "di-di-tu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ngu-thap-ngu-tu-tho": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cuoc-phong-tran": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cong-danh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thoat-vong-danh-loi": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cuoc-cong-danh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "liet-nu-nguyen-thi-kim": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "liet-nu-phan-thi-thuan": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "mua-thu-di-choi-thuyen-duoi-trang": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "dong-huong-tich": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "huong-son-phong-canh-ca": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "day-con-o-cho-co-duc": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "bon-phan-con-gai": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "vo-khuyen-chong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cuoc-doi-kho-so": {
+    "textbookCount": null,
+    "wikiArticle": "Cung oán ngâm khúc",
+    "pageviews12m": 9652,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "canh-kho-o-trong-cung": {
+    "textbookCount": null,
+    "wikiArticle": "Cung oán ngâm khúc",
+    "pageviews12m": 9652,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "luc-biet-ly": {
+    "textbookCount": null,
+    "wikiArticle": "Chinh phụ ngâm",
+    "pageviews12m": 24042,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "nho-mong": {
+    "textbookCount": null,
+    "wikiArticle": "Chinh phụ ngâm",
+    "pageviews12m": 24042,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "buon-rau": {
+    "textbookCount": null,
+    "wikiArticle": "Chinh phụ ngâm",
+    "pageviews12m": 24042,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "tai-sac-hai-chi-em-thuy-kieu": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "kieu-di-choi-thanh-minh-gap-ma-dam-tien": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "kieu-gay-dan-cho-kim-trong-nghe": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "kieu-nang-tinh-kim-trong-dan-em-thay-loi": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "hoan-thu-ghen": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "kieu-bi-khuyen-ung-bat": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "thuc-sinh-gap-kieu-o-nha-hoan-thu": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "hoan-thu-doi-dap-go-toi": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "tin-tuc-thuy-kieu-tu-khi-vao-tay-tu-ba-den-khi-gap-tu-hai": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "luc-tai-hop": {
+    "textbookCount": null,
+    "wikiArticle": "Truyện Kiều",
+    "pageviews12m": 107544,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "hai-ben-the-nguyen-cung-nhau": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "hai-ben-lai-gap-nhau": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ngoc-khanh-thu-tiet": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thuong-ghet-ve-viec-doi": {
+    "textbookCount": null,
+    "wikiArticle": "Lục Vân Tiên",
+    "pageviews12m": 29461,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "nguyet-nga-tram-minh": {
+    "textbookCount": null,
+    "wikiArticle": "Lục Vân Tiên",
+    "pageviews12m": 29461,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "ba-thi-kinh-xuat-gia-di-tu": {
+    "textbookCount": null,
+    "wikiArticle": "Quan Âm Thị Kính",
+    "pageviews12m": 485,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "ba-thi-kinh-nuoi-con-thi-mau": {
+    "textbookCount": null,
+    "wikiArticle": "Quan Âm Thị Kính",
+    "pageviews12m": 485,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "thay-man-tu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "danh-giac-mong-co": {
+    "textbookCount": null,
+    "wikiArticle": "Đại Nam quốc sử diễn ca",
+    "pageviews12m": 79,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "le-thai-to": {
+    "textbookCount": null,
+    "wikiArticle": "Đại Nam quốc sử diễn ca",
+    "pageviews12m": 79,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "bai-phu-hong-thi": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "bai-phu-co-bac": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "te-pho-ma-chuong-hau-quan-vu-tinh-va-le-bo-thuong-thu-ngo-to": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "te-tran-vong-tuong-si": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thanh-binh-dinh-cung-nhau-ba-tu-tiet": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "me-khuyen-con-luc-ve-nha-chong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "lay-chong-cho-dang-tam-chong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "bai-chieu-cua-duc-minh-menh-khuyen-ran-than-dan-ve-luc-dau-n": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "trich-luc-may-cau-doi-co": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "bai-hich-cac-tuong-si": {
+    "textbookCount": null,
+    "wikiArticle": "Hịch tướng sĩ",
+    "pageviews12m": 21435,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "binh-ngo-dai-cao": {
+    "textbookCount": null,
+    "wikiArticle": "Bình Ngô đại cáo",
+    "pageviews12m": 58202,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "cac-buc-cao-si-nuoc-nam-ta": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "bai-van-bia-den-tho-ong-chu-van-an": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "bay-tinh-nguoi-ta": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "hoc-thuat-luc-le-mat": {
+    "textbookCount": null,
+    "wikiArticle": "Vũ trung tùy bút",
+    "pageviews12m": 2328,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "bai-tua-truyen-kieu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ong-nguyen-dinh-te": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ong-nguyen-van-danh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ong-nguyen-van-trinh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tu-trong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "hi-vong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "mao-hiem": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "van-chuong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cau-chuyen-mot-toi-cua-nguoi-tan-hon": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "luan-ve-ly-thu-van-chuong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "dem-trang-choi-ho-tay": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "quan-niem-ve-tho-cua-nguoi-ta-nguoi-tau": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "tu-ben-do-suoi-vao-chua-ngoai": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cung-chiem-cac-ton-lang": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "lang-duc-gia-long": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cuoc-nam-tien-cua-dan-toc-ta": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "di-tau-thuy-tu-my-tho-len-long-xuyen": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "the-nao-goi-la-kich": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "di-huong-cang": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "kim-lang-dieu-co": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "danh-bac": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cai-chua-trong-bung-nguoi": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "danh-du-voi-hu-vinh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "cai-cach-canh-tranh-cua-nguoi-minh": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ton-chi-le-nhac": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "song-chet-mac-bay": {
+    "textbookCount": null,
+    "wikiArticle": "Sống chết mặc bay",
+    "pageviews12m": 5090,
+    "pageviewsFetchedOn": "2026-09-25"
+  },
+  "bung-lam-da-chiu": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "quan-tu-kha-khi-di-ky-phuong": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "canh-cung-quan": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "hoi-gio-may": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thu-dien-vien": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "thu-an-dat": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "truoc-khi-ra-bang": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "sau-khi-ra-bang": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "doi-nguoi-tham-thoat-qvtd-8": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "ong-phong-da-qvtd-22": {
+    "textbookCount": null,
+    "wikiArticle": null,
+    "pageviews12m": null,
+    "pageviewsFetchedOn": null
+  },
+  "dong-huong-tich-qvtd-65": {
+    "textbookCount": null,
+    "wikiArticle": null,
     "pageviews12m": null,
     "pageviewsFetchedOn": null
   }

@@ -120,4 +120,5 @@ Một chiếc thuyền câu bé tẻo teo.
 | `pnpm data:fetch "<Wikisource title>" --slug <slug> [--write]` | Download + compare with Wikisource |
 | `pnpm data:normalize [--hyphens]` | NFC + tone style (+ fix "nhân-dân") |
 | `pnpm data:pageviews` | Fill Wikipedia pageviews in `data/fame.json` |
+| `pnpm data:qvtd-fetch` / `pnpm data:qvtd-import [--list]` | Download (cached) and import Quốc văn trích diễm as drafts |
 | `pnpm data:syllables [slug]` | Syllable count per reading (for timing your reading speed) |

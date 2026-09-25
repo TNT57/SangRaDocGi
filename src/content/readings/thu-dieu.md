@@ -1,30 +1,35 @@
 ---
-title: "Thu điếu"
+title: Thu điếu
 status: draft
 theme: thien-nhien
 genre: tho
 form: verse
 authors:
-  - name: "Nguyễn Khuyến"
+  - name: Nguyễn Khuyến
     born: 1835
     died: 1909
 translators: []
 retellers: []
 source:
-  name: "Wikisource tiếng Việt (chưa lấy)"
-  url: null
-copyright: { vn: free, au: free, us: free }
+  name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
+  url: https://vi.wikisource.org/wiki/Qu%E1%BB%91c_v%C4%83n_tr%C3%ADch_di%E1%BB%85m/19?oldid=88807
+  revision: 88807
+  edition: bài 19
+copyright:
+  vn: free
+  au: free
+  us: free
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Draft typed from memory by Claude Code because vi.wikisource.org was blocked in the build environment. Not proofread. Fetch the Wikisource copy, compare line by line, then fill source, proofread, heavy and review. Look for: Thu điếu."
+notes: "Imported from Quốc văn trích diễm, bài 19. Theme proposed by Claude: confirm. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/40 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Ao thu lạnh lẽo nước trong veo,
 Một chiếc thuyền câu bé tẻo teo.
 Sóng biếc theo làn hơi gợn tí,
-Lá vàng trước gió khẽ đưa vèo.
-Tầng mây lơ lửng trời xanh ngắt,
+Lá vàng trước gió sẽ đưa vèo.
+Từng mây lơ lửng trời xanh ngắt,
 Ngõ trúc quanh co khách vắng teo.
-Tựa gối, buông cần lâu chẳng được,
+Tựa gối ôm (buông) cần lâu chẳng được,
 Cá đâu đớp động dưới chân bèo.
