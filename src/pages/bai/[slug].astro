@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import ReadingBody from '../../components/ReadingBody.astro';
+import { loadPool } from '../../lib/pool';
+import { personLine, type ReadingView } from '../../lib/readings';
+import { tierColor } from '../../config/rarity';
+import { t } from '../../i18n/vi';
+
+export async function getStaticPaths() {
+  const pool = await loadPool();
+  return pool.map((view) => ({ params: { slug: view.slug }, props: { view } }));
+}
+
+const { view } = Astro.props as { view: ReadingView };
+const d = view.record.data;
+const authors = d.authors.map(personLine).join(', ');
+const translators = d.translators.map(personLine).join(', ');
+const retellers = d.retellers.map(personLine).join(', ');
+const description = d.hook ?? `${d.title} — ${view.author}. ${t.readTime(view.minutes)}.`;
+---
+<Base title={d.title} description={description} draft={view.draft}>
+  <article class="reading" style={`--r:${tierColor(view.tier)}`} data-slug={view.slug} data-seconds={view.seconds}>
+    <div class="reading-meta">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="sr-only">{t.rarityHidden(view.tier + 1)}</span>
+      <span>{view.themeLabel}</span>
+      <span aria-hidden="true">·</span>
+      <span>{view.genreLabel}</span>
+      <span aria-hidden="true">·</span>
+      <span>{t.readTime(view.minutes)}</span>
+    </div>
+    <h1>{d.title}</h1>
+    <p class="byline">{authors}</p>
+    {translators && <p class="byline">{t.translator}: {translators}</p>}
+    {retellers && <p class="byline">{t.reteller}: {retellers}</p>}
+    {d.heavy && <span class="heavy-tag">{t.heavy}</span>}
+    {d.hook && <p class="hook">{d.hook}</p>}
+
+    <ReadingBody parsed={view.parsed} />
+
+    <aside class="reading-foot">
+      <span>
+        {t.source}:{' '}
+        {d.source.url ? <a href={d.source.url} rel="noopener">{d.source.name}</a> : d.source.name}
+        {d.source.edition && <>, {d.source.edition}</>}
+      </span>
+      <a href="/nguon-va-ban-quyen">{t.sourcesPage}</a>
+    </aside>
+    <a class="back-link" href="/">{t.backToCrate}</a>
+  </article>
+
+  <script>
+    import { track } from '../../lib/analytics';
+
+    // "Read to the end" (CLAUDE.md §10): the end mark is on screen and the reader stayed
+    // at least a third of the read time (min 10 s). Sent once per page view.
+    const article = document.querySelector<HTMLElement>('[data-slug]');
+    const end = document.querySelector('[data-read-end]');
+    if (article && end && 'IntersectionObserver' in window) {
+      const slug = article.dataset.slug!;
+      const minMs = Math.max(10_000, (Number(article.dataset.seconds) || 0) * 333);
+      const startedAt = performance.now();
+      let sent = false;
+      let timer = 0;
+      const send = () => {
+        if (sent) return;
+        sent = true;
+        track(`read-end/${slug}`);
+        observer.disconnect();
+      };
+      const observer = new IntersectionObserver((entries) => {
+        if (!entries.some((e) => e.isIntersecting)) return window.clearTimeout(timer);
+        const wait = minMs - (performance.now() - startedAt);
+        if (wait <= 0) send();
+        else timer = window.setTimeout(send, wait);
+      });
+      observer.observe(end);
+    }
+  </script>
+</Base>

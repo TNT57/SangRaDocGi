@@ -1,0 +1,50 @@
+---
+import type { ParsedBody, Inline } from '../lib/text/body';
+import { t } from '../i18n/vi';
+
+interface Props {
+  parsed: ParsedBody;
+}
+const { parsed } = Astro.props;
+const parts = (inlines: Inline[]) => inlines;
+---
+<div class="reading-body" data-reading-body>
+  {
+    parsed.blocks.map((block) =>
+      block.kind === 'break' ? (
+        <hr class="scene-break" />
+      ) : block.kind === 'para' ? (
+        <p>
+          {parts(block.inlines).map((i) =>
+            i.kind === 'text' ? i.text : <a class="fn-ref" id={`ref-${i.key}`} href={`#fn-${i.key}`} aria-label={`${t.footnotes} ${i.n}`}>{i.n}</a>,
+          )}
+        </p>
+      ) : (
+        <p class="stanza">
+          {block.lines.map((line) => (
+            <span class={line.indent ? 'verse-line is-indented' : 'verse-line'}>
+              {parts(line.inlines).map((i) =>
+                i.kind === 'text' ? i.text : <a class="fn-ref" id={`ref-${i.key}`} href={`#fn-${i.key}`} aria-label={`${t.footnotes} ${i.n}`}>{i.n}</a>,
+              )}
+            </span>
+          ))}
+        </p>
+      ),
+    )
+  }
+  <p class="end-mark" data-read-end>{t.endMark}</p>
+</div>
+{
+  parsed.notes.length > 0 && (
+    <section class="footnotes" aria-labelledby="fn-title">
+      <h2 id="fn-title">{t.footnotes}</h2>
+      <ol>
+        {parsed.notes.map((n) => (
+          <li id={`fn-${n.key}`}>
+            {n.text} <a href={`#ref-${n.key}`} aria-label="Quay lại">↩</a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

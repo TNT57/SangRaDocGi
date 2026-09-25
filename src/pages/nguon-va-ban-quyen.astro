@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadPool } from '../lib/pool';
+import { personLine } from '../lib/readings';
+import { CONTACT_EMAIL_PLACEHOLDER, site } from '../config/site';
+import { t } from '../i18n/vi';
+
+const pool = await loadPool();
+const email = site.contactEmail;
+const emailReady = email !== CONTACT_EMAIL_PLACEHOLDER;
+const flag = (s: 'free' | 'protected') => (s === 'free' ? '✓' : '✗');
+---
+<Base title={t.sourcesPage} description="Nguồn văn bản, cách kiểm tra bản quyền và cách yêu cầu gỡ bài.">
+  <div class="prose-page">
+    <h1>{t.sourcesPage}</h1>
+    <p>
+      Mọi bài trong két là văn bản thuộc phạm vi công cộng. Chúng tôi chỉ đăng một bài khi tác giả,
+      người dịch và người kể lại (nếu có) đều đã mất từ năm <strong>1947 trở về trước</strong>, hoặc là
+      tác phẩm dân gian. Mốc này giúp bài đọc tự do ở cả <strong>Việt Nam, Úc và Hoa Kỳ</strong>.
+    </p>
+
+    <h2>Cách chúng tôi kiểm tra</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tác giả (và người dịch) mất</th><th>Việt Nam</th><th>Úc</th><th>Hoa Kỳ</th></tr></thead>
+        <tbody>
+          <tr><td>1947 trở về trước</td><td class="ok">Tự do</td><td class="ok">Tự do</td><td class="ok">Tự do</td></tr>
+          <tr><td>1948 – 1954</td><td class="ok">Tự do</td><td class="ok">Tự do</td><td class="no">Có thể còn bảo hộ</td></tr>
+          <tr><td>1955 – 1975</td><td class="ok">Tự do</td><td class="no">Có thể còn bảo hộ</td><td class="no">Có thể còn bảo hộ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>Bản dịch cũng có tác giả: năm mất của <strong>người dịch</strong> cũng được tính.</li>
+      <li>Truyện dân gian thì tự do, nhưng mỗi bản kể lại có tác giả riêng. Chúng tôi chỉ dùng bản kể có người kể đã mất đủ lâu.</li>
+      <li>Các chùm ca dao do chúng tôi tự chọn, không chép lại tuyển tập của người khác.</li>
+      <li>Chúng tôi không chép chú thích hay lời dẫn của sách giáo khoa.</li>
+      <li>Ghi công là bắt buộc, nhưng ghi công không thay cho quyền sử dụng.</li>
+    </ul>
+    <p><em>Đây không phải tư vấn pháp lý.</em></p>
+
+    <h2>Yêu cầu gỡ bài</h2>
+    <p>
+      Nếu bạn cho rằng một bài không nên có ở đây, hãy viết cho chúng tôi
+      {emailReady ? <a href={`mailto:${email}`}>{email}</a> : <span>(địa chỉ liên hệ đang được cập nhật)</span>}.
+      Mọi yêu cầu hợp lệ được xử lý trong vòng <strong>7 ngày</strong>.
+    </p>
+
+    <h2>Nguồn của từng bài</h2>
+    {
+      pool.length === 0 ? (
+        <p>Kho đang được chuẩn bị.</p>
+      ) : (
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Bài</th><th>Tác giả / người dịch</th><th>Nguồn</th><th>VN · Úc · Mỹ</th><th>Duyệt</th></tr>
+            </thead>
+            <tbody>
+              {pool.map((v) => {
+                const d = v.record.data;
+                const people = [...d.authors, ...d.translators.map((p) => ({ ...p, name: `${t.translator}: ${p.name}` })), ...d.retellers.map((p) => ({ ...p, name: `${t.reteller}: ${p.name}` }))];
+                return (
+                  <tr>
+                    <td><a href={`/bai/${v.slug}`}>{d.title}</a>{v.draft && ' (nháp)'}</td>
+                    <td>{people.map(personLine).join('; ')}</td>
+                    <td>{d.source.url ? <a href={d.source.url} rel="noopener">{d.source.name}</a> : d.source.name}</td>
+                    <td>{d.copyright ? `${flag(d.copyright.vn)} ${flag(d.copyright.au)} ${flag(d.copyright.us)}` : '—'}</td>
+                    <td>{d.review ? d.review.date : '—'}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )
+    }
+    <a class="back-link" href="/">{t.backToCrate}</a>
+  </div>
+</Base>

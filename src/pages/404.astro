@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { t } from '../i18n/vi';
+---
+<Base title={t.notFoundTitle}>
+  <div class="prose-page">
+    <h1>{t.notFoundTitle}</h1>
+    <p>{t.notFoundBody}</p>
+    <a class="back-link" href="/">{t.backToCrate}</a>
+  </div>
+</Base>

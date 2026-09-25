@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import CrateApp from '../components/CrateApp';
+import { loadPool } from '../lib/pool';
+import { toCard } from '../lib/readings';
+
+const pool = (await loadPool()).map(toCard);
+const hasDrafts = pool.some((c) => c.draft);
+---
+<Base draft={hasDrafts}>
+  <div class="wrap">
+    <CrateApp client:load pool={pool} />
+  </div>
+</Base>

@@ -1,0 +1,61 @@
+---
+import '../styles/fonts.css';
+import '../styles/global.css';
+import BrandMark from '../components/BrandMark.astro';
+import { site } from '../config/site';
+import { t } from '../i18n/vi';
+import { includeDrafts } from '../lib/pool';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Adds a draft banner for this page. */
+  draft?: boolean;
+}
+
+const { title, description = t.siteDescription, draft = false } = Astro.props;
+const fullTitle = title ? `${title} · ${site.name}` : `${site.name} — ${t.siteTagline}`;
+const goat = import.meta.env.PUBLIC_GOATCOUNTER_CODE as string | undefined;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+---
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#f5f0e6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#13151a" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="vi_VN" />
+    {includeDrafts && <meta name="robots" content="noindex,nofollow" />}
+    {
+      goat && (
+        <script
+          is:inline
+          async
+          data-goatcounter={`https://${goat}.goatcounter.com/count`}
+          src="https://gc.zgo.at/count.js"
+        />
+      )
+    }
+  </head>
+  <body>
+    {draft && <div class="draft-banner" role="note">{t.draftBanner}</div>}
+    <header class="site-header wrap">
+      <a href="/" class="brand"><BrandMark />{site.name}</a>
+      <slot name="header-end" />
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer wrap">
+      <span>{site.name} · {t.footerNote}</span>
+      <a href="/nguon-va-ban-quyen">{t.sourcesPage}</a>
+    </footer>
+  </body>
+</html>
