@@ -109,6 +109,7 @@ Một chiếc thuyền câu bé tẻo teo.
 |---|---|
 | `pnpm dev` | Local site with drafts at http://localhost:4321 |
 | `pnpm dev:phone` | Same, reachable from a phone on the same Wi-Fi |
+| `pnpm preview:file` | Whole site with drafts packed into one HTML file (`dist-preview/`), for private previews such as a Claude artifact |
 | `pnpm preview:site` | Build exactly what production ships and serve it at http://127.0.0.1:4321 |
 | `pnpm build` | Production build (published readings only) |
 | `pnpm check` | Type checks |

@@ -32,6 +32,8 @@ Import this repo at **vercel.com/new** and press Deploy. Nothing else is needed.
 
 **On your phone:** run `pnpm dev:phone` instead of `pnpm dev`. It prints a "Network" address like `http://192.168.1.20:4321`. Open it on a phone connected to the **same Wi-Fi**.
 
+**One-file preview:** `pnpm preview:file` packs the whole site (with drafts) into `dist-preview/ket-sach-preview.html`. Double-click it, or ask Claude to publish it as a private artifact to view it inside the Claude app.
+
 **See exactly what Vercel will publish** (only reviewed readings, so today an empty vault): `pnpm preview:site`, then open http://127.0.0.1:4321.
 
 To reset your opened crates and daily count: open the browser's developer tools → Application → Local Storage → delete the `ketsach:v1:*` keys (or use a private window).

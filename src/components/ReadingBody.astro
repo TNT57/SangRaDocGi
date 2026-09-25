@@ -50,41 +50,7 @@ const parts = (inlines: Inline[]) => inlines;
 }
 
 <script>
-  // Poems (CLAUDE.md §7): keep every line on one row so lines stay aligned.
-  // If the longest line is wider than the screen, shrink the poem just enough (down to 15px, only on small phones).
-  // Without JavaScript, a very long line may wrap on a small phone.
-  const MIN_PX = 15;
-  const body = document.querySelector<HTMLElement>('[data-reading-body]');
-  const lines = body ? [...body.querySelectorAll<HTMLElement>('.verse-line')] : [];
+  import { keepVerseFitted } from '../lib/fit-verse';
 
-  function fit() {
-    if (!body || !lines.length) return;
-    body.style.removeProperty('--verse-size');
-    body.classList.add('is-measuring');
-    // Where the text of each line really ends, measured from the left edge of the text column.
-    const left = body.getBoundingClientRect().left;
-    const range = document.createRange();
-    const widest = Math.max(
-      ...lines.map((l) => {
-        range.selectNodeContents(l);
-        return range.getBoundingClientRect().right - left;
-      }),
-    );
-    body.classList.remove('is-measuring');
-    const available = body.clientWidth;
-    const base = parseFloat(getComputedStyle(body).fontSize);
-    if (widest <= available) return;
-    const size = Math.max(MIN_PX, Math.floor(base * (available / widest) * 0.98 * 10) / 10);
-    body.style.setProperty('--verse-size', `${size / base}em`);
-  }
-
-  if (lines.length) {
-    fit();
-    void document.fonts?.ready.then(fit);
-    let timer = 0;
-    window.addEventListener('resize', () => {
-      window.clearTimeout(timer);
-      timer = window.setTimeout(fit, 100);
-    });
-  }
+  keepVerseFitted(() => document.querySelector<HTMLElement>('[data-reading-body]'));
 </script>
