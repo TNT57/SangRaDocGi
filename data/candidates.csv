@@ -1,0 +1,17 @@
+title,author,author_died,translator_or_reteller,their_died,genre,theme_guess,rule_result,where_to_look,status,notes
+Thu vịnh,Nguyễn Khuyến,1909,,,tho,thien-nhien,safe-everywhere,vi.wikisource.org,todo,
+Thu ẩm,Nguyễn Khuyến,1909,,,tho,thien-nhien,safe-everywhere,vi.wikisource.org,todo,
+Hai đứa trẻ,Thạch Lam,1942,,,truyen,than-phan,safe-everywhere,vi.wikisource.org,todo,Long: cut at a scene break (§8.4)
+Gió lạnh đầu mùa,Thạch Lam,1942,,,truyen,tinh-cam,safe-everywhere,vi.wikisource.org,todo,
+Chuyện người con gái Nam Xương,Nguyễn Dữ,,Trúc Khê,1947,truyen,than-phan,safe-everywhere if Trúc Khê translation,Truyền kỳ mạn lục (Trúc Khê dịch),todo,Store translator; check Nguyễn Dữ death is pre-modern
+Hịch tướng sĩ,Trần Quốc Tuấn,1300,?,?,nghi-luan,dat-nuoc-lich-su,depends on translator,find a translation whose translator died ≤ 1947,todo,Common translations may be locked
+Thánh Gióng,Dân gian,,?,?,dan-gian,dat-nuoc-lich-su,depends on reteller,older collection or Nathan retells,todo,Textbook wording and Nguyễn Đổng Chi (d. 1984) are locked
+Thầy bói xem voi,Dân gian,,?,?,dan-gian,tieng-cuoi,depends on reteller,older collection or Nathan retells,todo,
+Mùa xuân chín,Hàn Mặc Tử,1940,,,tho,thien-nhien,safe-everywhere,vi.wikisource.org,todo,
+Bích Khê (short poems),Bích Khê,1946,,,tho,,safe-everywhere,vi.wikisource.org,todo,Pick pieces humans already selected (textbooks / anthologies)
+Phan Bội Châu (short pieces),Phan Bội Châu,1940,,,tho,dat-nuoc-lich-su,safe-everywhere,vi.wikisource.org,todo,
+Quốc văn trích diễm — 182 pieces,Dương Quảng Hàm (compiler),1946,,,,,"sort each piece by its own author",scans / vi.wikisource.org,todo,Main top-up for the 100-reading target (§8.2)
+Lão Hạc,Nam Cao,1951,,,truyen,than-phan,VN + AU only,,blocked,Not safe in the US (§8.3). Only after asking a lawyer
+Tức nước vỡ bờ,Ngô Tất Tố,1954,,,truyen,than-phan,VN + AU only,,blocked,Not safe in the US
+Hạnh phúc của một tang gia,Vũ Trọng Phụng,1939,,,truyen,tieng-cuoi,VN term extended to 2020 → likely protected in US,,blocked,Store stricter flags if ever added
+Nam quốc sơn hà (bản dịch Việt nam sử lược),Lý Thường Kiệt (tương truyền),1105,Trần Trọng Kim,1953,tho,dat-nuoc-lich-su,VN + AU only,,blocked,Draft uses phiên âm only
