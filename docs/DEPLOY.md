@@ -1,38 +1,46 @@
-# Deploy guide
+# Deploy guide — get a link in 3 steps
 
-> **Do not deploy publicly until at least one reading passes §8.5.** A normal build ships only published readings, so an early deploy shows an empty vault ("Kho đang được chuẩn bị").
-> Never deploy a build made with `INCLUDE_DRAFTS=1` to a public URL (CLAUDE.md rule 4).
+The repo is already set up for Vercel (`vercel.json`, pinned pnpm, adapter, automatic site URL).
+**No settings are required** to get a working link.
 
-## 1. Vercel project (about 5 minutes, one time)
+## Get the link (about 3 minutes)
 
-1. On vercel.com → **Add New… → Project** → import `TNT57/SangRaDocGi`.
-2. Framework preset: **Astro** (auto-detected). Build command `pnpm build`, output handled by the adapter.
-3. Every push to the main branch then deploys automatically. Pull requests get preview URLs.
+1. Go to **vercel.com/new** and sign in with GitHub.
+2. **Import** `TNT57/SangRaDocGi`. If it is not in the list, click "Adjust GitHub App Permissions" and allow this repo.
+3. Leave everything as it is and press **Deploy**. When it finishes you get a link like `https://sang-ra-doc-gi.vercel.app`.
 
-## 2. Counter storage (Upstash Redis, free tier)
+Every later `git push` redeploys by itself.
 
-1. In the Vercel project → **Storage → Create → Upstash (Redis)** → connect it to the project.
-   This sets `KV_REST_API_URL` and `KV_REST_API_TOKEN` for you.
-2. Add one more environment variable: `COUNTER_SALT` = any long random string.
-3. Redeploy. Check `https://<your-site>/api/counter` → `{"count":0}`.
+### What the link shows today
 
-If these are missing, the API answers 503 and the site simply hides the counter.
+- **Production link:** only readings that pass the §8.5 checklist (CLAUDE.md rule 4). Right now none do, so it shows a calm "Kho đang được chuẩn bị" page. It fills up as you publish readings (see `PHASE0_DATA_GUIDE.md`).
+- **Preview links** (from other branches or pull requests): show the drafts with a yellow "BẢN NHÁP" banner. Vercel keeps preview links private (you must be logged in) by default.
+- Want the drafts on the production link anyway, e.g. to show a friend? Vercel → Project → Settings → Environment Variables → add `INCLUDE_DRAFTS` = `1` → Redeploy. ⚠️ This goes against rule 4 (unreviewed texts in public). Remove it before you share the link widely.
 
-## 3. Analytics (GoatCounter, free, no cookies)
+## Optional: turn on the open counter (5 minutes)
 
-1. Create a site at goatcounter.com, e.g. code `ketsach`.
-2. Add `PUBLIC_GOATCOUNTER_CODE=ketsach` in Vercel → redeploy.
-3. Events you will see (CLAUDE.md §10):
-   - `open` → crates opened per day
-   - `read-end/<slug>` ÷ pageviews of `/bai/<slug>` → % read to the end (the most important number)
-   - `first-visit` and `return-d1 … return-d7` → share of devices that come back within 7 days
+Without this the site works, the counter is just hidden.
 
-## 4. Domain and site URL
+1. Vercel project → **Storage** → **Create Database** → **Upstash for Redis** (free) → connect it to this project.
+   This adds `KV_REST_API_URL` and `KV_REST_API_TOKEN` automatically.
+2. Settings → Environment Variables → add `COUNTER_SALT` = any long random text.
+3. **Redeploy.** Check `https://<your-link>/api/counter` → `{"count":0}`.
 
-Add your domain in Vercel → Domains, then set `SITE_URL=https://your-domain` (used for canonical links).
+## Optional: turn on analytics (3 minutes)
 
-## Before launch checklist
+1. Create a free site at **goatcounter.com**, e.g. code `ketsach`.
+2. Add environment variable `PUBLIC_GOATCOUNTER_CODE` = `ketsach` → **Redeploy**.
+3. What you will see (CLAUDE.md §10):
+   - `open`: crates opened per day
+   - `read-end/<slug>` compared with visits to `/bai/<slug>`: % read to the end (the most important number)
+   - `first-visit` and `return-d1 … return-d7`: devices that come back within 7 days
 
-- `pnpm data:check --launch` passes (100 readings, 15 per theme, speed measured, contact email set, fame data complete).
+## Optional: your own domain
+
+Vercel → Settings → Domains → add it. Canonical links follow automatically (or set `SITE_URL`).
+
+## Before the real launch
+
+- `pnpm data:check --launch` passes (100 readings, 15 per theme, reading speed measured, contact email set, fame data complete).
 - ⏳ 30-day target written down (CLAUDE.md §10).
 - Decree 147/2024 check (CLAUDE.md §13).

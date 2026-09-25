@@ -71,7 +71,7 @@ tests/unit, tests/e2e
 ## Rules the code enforces
 
 1. **Rule 4 (never publish unchecked):** `buildViews()` keeps only readings that pass all 9 checklist items **and** have `status: published`. A file marked `published` that fails the checklist **stops the build**.
-2. **Drafts** appear only in `pnpm dev` or a build with `INCLUDE_DRAFTS=1`. Those pages get a yellow "BẢN NHÁP" banner and `noindex`. Never deploy such a build publicly.
+2. **Drafts** appear only in `pnpm dev`, Vercel preview deployments (private by default) or a build with `INCLUDE_DRAFTS=1`. Those pages get a yellow "BẢN NHÁP" banner and `noindex`. Never deploy such a build publicly.
 3. **Result first:** `pick()` chooses and saves the reading, *then* the reel is built so the winner lands under the gold line.
 4. **No tier names:** colours only. Screen readers get "độ hiếm n/5".
 5. **Counter:** loaded once, +1 locally, hidden on any error. No polling, no websockets, no fake start.

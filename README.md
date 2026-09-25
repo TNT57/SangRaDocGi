@@ -9,6 +9,10 @@ A Vietnamese reading site: open a crate (CS:GO style) and get one short public-d
 - **Adding readings (Phase 0):** [`docs/PHASE0_DATA_GUIDE.md`](docs/PHASE0_DATA_GUIDE.md)
 - **Going live:** [`docs/DEPLOY.md`](docs/DEPLOY.md)
 
+## Get a link
+
+Import this repo at **vercel.com/new** and press Deploy. Nothing else is needed. Details and optional counter/analytics: [`docs/DEPLOY.md`](docs/DEPLOY.md).
+
 ## Run it
 
 Needs Node 22.12+ and pnpm.

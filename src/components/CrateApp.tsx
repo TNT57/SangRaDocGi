@@ -96,7 +96,7 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
   }
 
   function open() {
-    if (phase === 'spinning' || left <= 0 || pool.length === 0) return;
+    if (phase === 'spinning' || left <= 0) return;
     const res = pick(pool, tab, opened);
     if (res.kind !== 'reading') return;
     const winner = res.reading;
@@ -163,6 +163,21 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
   );
   const openedInTab = inTab.filter((c) => opened.has(c.slug)).length;
 
+  if (pool.length === 0) {
+    return (
+      <>
+        <div class="intro-row">
+          <div class="intro">
+            <h1>{t.siteTagline}</h1>
+          </div>
+        </div>
+        <section class="vault" aria-label={t.crateLabel}>
+          <p class="vault-empty">{t.poolEmpty}</p>
+        </section>
+      </>
+    );
+  }
+
   return (
     <>
       <div class="intro-row">
@@ -193,18 +208,14 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
       </div>
 
       <section class="vault" aria-label={t.crateLabel}>
-        {pool.length === 0 ? (
-          <p class="vault-empty">{t.poolEmpty}</p>
-        ) : (
-          <div class="reel" aria-hidden="true">
-            <div class="centre-line" />
-            <div class="reel-track" ref={trackRef} style={{ transform: `translate3d(${position.current}px,0,0)` }}>
-              {reel.map((card, i) => (
-                <Card key={`${i}-${card.slug}`} card={card} hideFromReaders />
-              ))}
-            </div>
+        <div class="reel" aria-hidden="true">
+          <div class="centre-line" />
+          <div class="reel-track" ref={trackRef} style={{ transform: `translate3d(${position.current}px,0,0)` }}>
+            {reel.map((card, i) => (
+              <Card key={`${i}-${card.slug}`} card={card} hideFromReaders />
+            ))}
           </div>
-        )}
+        </div>
 
         <div class="controls">
           {exhausted ? (
@@ -228,7 +239,7 @@ export default function CrateApp({ pool }: { pool: CardData[] }) {
               </a>
             </>
           ) : (
-            <button type="button" class="open-button" onClick={open} disabled={spinning || pool.length === 0} aria-busy={spinning}>
+            <button type="button" class="open-button" onClick={open} disabled={spinning} aria-busy={spinning}>
               {buttonText} {!spinning && <span class="left">· {t.remaining(left)}</span>}
             </button>
           )}
