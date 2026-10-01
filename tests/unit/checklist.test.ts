@@ -35,6 +35,9 @@ describe('§8.5 checklist', () => {
       checkReading(record(overrides, body), speed, 2026).items.filter((i) => !i.ok).map((i) => i.n);
     expect(failing({ source: { name: 'x', url: null } })).toEqual([1]);
     expect(failing({ authors: [{ name: 'Ai đó', died: null }] })).toEqual([2, 3]);
+    // An upper bound passes only with evidence.
+    expect(failing({ authors: [{ name: 'Phạm Thấu', died: null, diedBy: 1849 }] })).toEqual([2]);
+    expect(failing({ authors: [{ name: 'Phạm Thấu', died: null, diedBy: 1849, evidence: 'father executed 1738' }] })).toEqual([]);
     expect(failing({ translators: [{ name: 'Trần Trọng Kim', died: 1953 }] })).toEqual([2, 3]);
     expect(failing({ copyright: { vn: 'free', au: 'free', us: 'protected' } })).toEqual([3]);
     expect(failing({}, 'vì nhân-dân')).toEqual([5]);

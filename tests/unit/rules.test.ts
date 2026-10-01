@@ -57,3 +57,10 @@ describe('rarity (§6.5)', () => {
     expect([...assignTiers(items).entries()]).toEqual([...assignTiers([...items].reverse()).entries()]);
   });
 });
+
+describe('"died no later than" (evidenced upper bound)', () => {
+  it('counts for the copyright rule', () => {
+    expect(safeEverywhere(flagsForPeople([{ name: 'Phạm Thấu', died: null, diedBy: 1849 }], 2026))).toBe(true);
+    expect(safeEverywhere(flagsForPeople([{ name: 'X', died: null, diedBy: 1960 }], 2026))).toBe(false);
+  });
+});

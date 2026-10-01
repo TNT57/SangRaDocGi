@@ -16,7 +16,9 @@ export function checkReading(rec: ReadingRecord, speed: ReadingSpeed, year = new
   const computed = flagsForPeople(people, year);
   const parsed = parseBody(rec.body, d.form);
 
-  const missingDeath = people.filter((p) => !p.folk && p.died === null).map((p) => p.name);
+  const missingDeath = people
+    .filter((p) => !p.folk && p.died === null && !(p.diedBy !== undefined && p.evidence))
+    .map((p) => p.name);
   const looser = d.copyright ? looserThanComputed(d.copyright, computed) : [];
   const textOk = isNormalized(rec.body) && isNormalized(d.title);
 

@@ -15,8 +15,8 @@ import { FAME_FILE, READINGS_DIR, joinFrontmatter, readJson, readRawFiles, write
 import { QVTD_PAGES, looksLucBat, modernizeSpelling, sentenceCase, slugify, splitPieces } from './lib/qvtd';
 import { pageUrl, type Parsed } from './lib/wikisource';
 
-type Author = { name: string; born?: number; died: number | null; approx?: boolean };
-type MapEntry = { theme?: ThemeId; genre?: GenreId; skip?: boolean; title?: string; translated?: boolean; translator?: string; flag?: string };
+type Author = { name: string; born?: number; died: number | null; approx?: boolean; diedBy?: number; evidence?: string; folk?: boolean };
+type MapEntry = { theme?: ThemeId; genre?: GenreId; skip?: boolean; title?: string; translated?: boolean; translator?: string; translatorSource?: string; flag?: string };
 
 const CACHE = path.resolve('data/cache/wikisource');
 const authors = readJson<Record<string, Author | string>>('data/qvtd-authors.json');
@@ -143,7 +143,10 @@ for (const x of pieces) {
       `Theme proposed by Claude: confirm.`,
       ...(m.flag ? [`Check: ${m.flag}`] : []),
       ...(m.translated ? ['Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known.'] : []),
-      ...(m.translator ? [`Nôm version traditionally attributed to ${m.translator} (some say Phan Huy Ích, d. 1822); both are safe.`] : []),
+      ...(m.translator && m.translatorSource ? [`Translator: ${m.translator}. ${m.translatorSource}`] : []),
+      ...(m.translator && !m.translatorSource ? [`Nôm version traditionally attributed to ${m.translator} (some say Phan Huy Ích, d. 1822); both are safe.`] : []),
+      ...[person, ...translators].filter((p) => p.died === null && !('folk' in p && p.folk) && !p.diedBy).map((p) => `${p.name}: death year not found yet, so §8.5 items 2–3 fail.`),
+      ...[person, ...translators].filter((p) => p.diedBy).map((p) => `${p.name}: died no later than ${p.diedBy} (${p.evidence ?? 'no evidence given'}).`),
       x.quality < 3 ? `Wikisource marks this transcription as not proofread (quality ${x.quality}/4): compare with the scan.` : `Wikisource quality ${x.quality}/4.`,
       `Scan: ${x.scans.map((s) => pageUrl(s)).join(' ')}`,
       `Old hyphenated spelling was modernised automatically.${x.unsure.length ? ` Check capitals at line starts: ${x.unsure.slice(0, 8).join(', ')}.` : ''}`,

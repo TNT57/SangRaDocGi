@@ -5,8 +5,9 @@ theme: tieng-cuoi
 genre: nghi-luan
 form: prose
 authors:
-  - name: Phạm Quang Sán
+  - name: Phạm Quang Sán (Ngạc Đình)
     died: null
+    evidence: "Wikisource: passed tú tài 1897 and cử nhân 1900, so born about 1870s; could have died after 1947. Death year needed."
 translators: []
 retellers: []
 source:
@@ -22,7 +23,7 @@ heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 97. Theme proposed by Claude: confirm. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/146 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/147 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/148 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Ít xì, Tham lam, Đổ thần. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 97. Theme proposed by Claude: confirm. Phạm Quang Sán (Ngạc Đình): death year not found yet, so §8.5 items 2–3 fail. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/146 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/147 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/148 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Ít xì, Tham lam, Đổ thần. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 (Cờ). — Ngán thay cờ bạc; lắm kẻ say sưa. Tam khoanh tứ đốm; bảy lọc năm lừa. Khi vui thì vỗ tay vào, chẳng chơi cũng thiệt; thấy của thì tối mắt lại, dẫu chết không chừa. Được thua cũng là, chẳng quản tiền trăm bạc chục; ruộng nương bán hết, vì chưng nay bạc mai cờ. Trên tay sẵn có đồng tiền, coi như cái rác; trong túi không còn một chữ, xác như thân vờ. Kẻ máu mê đã chót dúng chàm, biết dại vẫn còn cứ dại; bệnh truyền nhiễm từ đâu lưu độc, bao giờ mãi đến bây giờ.
 

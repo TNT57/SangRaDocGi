@@ -337,7 +337,8 @@
   "Phạm Đình Hổ": {
     "name": "Phạm Đình Hổ",
     "born": 1768,
-    "died": 1839
+    "died": 1839,
+    "evidence": "Commonly cited 1768–1839; Quốc văn trích diễm gives birth as 1770."
   },
   "Nguyễn Bá Trác": {
     "name": "Nguyễn Bá Trác",
@@ -363,5 +364,43 @@
     "name": "Huỳnh Tịnh Của (Paulus Của)",
     "born": 1834,
     "died": 1907
+  },
+  "Nguyễn Hữu Tiến": {
+    "name": "Nguyễn Hữu Tiến",
+    "born": 1875,
+    "died": 1941,
+    "evidence": "Wikisource, Tác gia:Nguyễn Hữu Tiến (1875–1941)."
+  },
+  "Dương Quảng Hàm": {
+    "name": "Dương Quảng Hàm",
+    "born": 1898,
+    "died": 1946
+  },
+  "Trần Văn Ngoạn": {
+    "name": "Trần Văn Ngoạn",
+    "died": null,
+    "evidence": "Named as translator in Quốc văn trích diễm (bài 109 cites Nam Phong số 19). Life years not found on Wikisource."
+  },
+  "Phạm Thấu": {
+    "name": "Phạm Thấu",
+    "died": null,
+    "diedBy": 1849,
+    "evidence": "Wikisource (Tác gia:Phạm Thấu): youngest son of Phạm Công Thế, who was executed in 1738, so born by about 1739; nobody lives past 110."
+  },
+  "Hoàng Mẫn Đạt": {
+    "name": "Hoàng Mẫn Đạt",
+    "died": null,
+    "diedBy": 1947,
+    "evidence": "Quốc văn trích diễm: from Nam Kỳ, a contemporary of Tôn Thọ Tường (b. 1825), rose to tuần phủ of Hà Tiên, a post that ended when France took Hà Tiên in 1867. So born by about 1837; nobody lives past 110. Inference: confirm."
+  },
+  "Bà Bang Nhãn": {
+    "name": "Bà Bang Nhãn (Lê Thị Liễu)",
+    "died": null,
+    "evidence": "Wikisource: real name Lê Thị Liễu, from Quảng Nam, wife of Phan Quỳ. Life years not found."
+  },
+  "Phạm Quang Sán": {
+    "name": "Phạm Quang Sán (Ngạc Đình)",
+    "died": null,
+    "evidence": "Wikisource: passed tú tài 1897 and cử nhân 1900, so born about 1870s; could have died after 1947. Death year needed."
   }
 }

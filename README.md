@@ -13,6 +13,20 @@ A Vietnamese reading site: open a crate (CS:GO style) and get one short public-d
 
 Import this repo at **vercel.com/new** and press Deploy. Nothing else is needed. Details and optional counter/analytics: [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
+## Use it on your phone (you and every other reader)
+
+The site works like an app once it is on the home screen. No app store, no account.
+
+**iPhone (Safari):** open the site → tap **Share** (square with arrow) → **Add to Home Screen** → **Add**.
+**Android (Chrome):** open the site → tap **⋮** → **Add to Home screen** (or **Install app**).
+
+It then opens full screen from its own Két Sách icon.
+
+- **One place per phone.** Opened crates and today's count are saved on the device, in the place you open it from. On iPhone, the home-screen icon and Safari keep separate records, so always use the icon.
+- **A morning nudge without notifications** (push notifications are out of scope, CLAUDE.md §12): use the phone's own automation.
+  - iPhone: Shortcuts → Automation → **Time of Day** (e.g. 6:30) → action **Open URLs** → your site link → turn off "Ask before running".
+  - Android: Google Assistant / Samsung **Routines** → time trigger → **Open website** (your link).
+
 ## See it on your computer first (about 5 minutes)
 
 1. **Install Node.js** (one time): download the "LTS" version from https://nodejs.org and install it.

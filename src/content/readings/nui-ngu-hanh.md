@@ -5,8 +5,9 @@ theme: thien-nhien
 genre: tho
 form: verse
 authors:
-  - name: Bà Bang Nhãn
+  - name: Bà Bang Nhãn (Lê Thị Liễu)
     died: null
+    evidence: "Wikisource: real name Lê Thị Liễu, from Quảng Nam, wife of Phan Quỳ. Life years not found."
 translators: []
 retellers: []
 source:
@@ -22,7 +23,7 @@ heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 52. Theme proposed by Claude: confirm. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/60 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Cảnh trí, Bồng lai, Ngư phủ, Tiều phu. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 52. Theme proposed by Claude: confirm. Bà Bang Nhãn (Lê Thị Liễu): death year not found yet, so §8.5 items 2–3 fail. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/60 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Cảnh trí, Bồng lai, Ngư phủ, Tiều phu. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Cảnh trí nào hơn cảnh trí này!
 Bồng lai thôi cũng hẳn là đây!

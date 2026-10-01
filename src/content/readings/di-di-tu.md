@@ -7,6 +7,8 @@ form: verse
 authors:
   - name: Hoàng Mẫn Đạt
     died: null
+    diedBy: 1947
+    evidence: "Quốc văn trích diễm: from Nam Kỳ, a contemporary of Tôn Thọ Tường (b. 1825), rose to tuần phủ of Hà Tiên, a post that ended when France took Hà Tiên in 1867. So born by about 1837; nobody lives past 110. Inference: confirm."
 translators: []
 retellers: []
 source:
@@ -15,14 +17,14 @@ source:
   revision: 88846
   edition: bài 53
 copyright:
-  vn: protected
-  au: protected
-  us: protected
+  vn: free
+  au: free
+  us: free
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 53. Theme proposed by Claude: confirm. Check: About a courtesan; decide if it fits \"adult pieces excluded\" (§14 #6). Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/60 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/61 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 53. Theme proposed by Claude: confirm. Check: About a courtesan; decide if it fits \"adult pieces excluded\" (§14 #6). Hoàng Mẫn Đạt: died no later than 1947 (Quốc văn trích diễm: from Nam Kỳ, a contemporary of Tôn Thọ Tường (b. 1825), rose to tuần phủ of Hà Tiên, a post that ended when France took Hà Tiên in 1867. So born by about 1837; nobody lives past 110. Inference: confirm.). Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/60 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/61 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Lầu xanh thảnh thót tiếng chuông truyền,
 Tỉnh giấc cao đường lúc ngửa nghiêng.

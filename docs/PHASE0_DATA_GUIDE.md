@@ -33,10 +33,13 @@ If a file says `published` but fails any item, **the build stops** on purpose.
 and `pnpm data:qvtd-import` turns them into draft readings (138 so far; bài 56 is a hát nói laid out as a table: add it by hand).
 
 - `data/qvtd-map.json`: theme per piece (proposed by Claude: confirm), plus optional genre, title, `skip`, translator and a `flag` note.
-- `data/qvtd-authors.json`: life years per author (commonly cited; check). Unknown: Phạm Thấu, Bà Bang Nhãn, Hoàng Mẫn Đạt, Phạm Quang Sán.
+- `data/qvtd-authors.json`: life years per author (commonly cited; check), with `evidence` where the source matters.
+  - `diedBy` = "died no later than", allowed only with `evidence`: Phạm Thấu (father executed 1738), Hoàng Mẫn Đạt (inference from the 1930 book: confirm).
+  - Still unknown (these pieces fail §8.3 until found): Bà Bang Nhãn (Lê Thị Liễu), Phạm Quang Sán (Ngạc Đình), translator Trần Văn Ngoạn.
 - The importer removes the 1930 edition's footnotes and line numbers, splits multi-poem pages (one poem = one crate) and modernises the hyphenated spelling. Capitals at line starts may need a look (listed in each file's `notes`).
 - Wikisource marks this transcription **not proofread**: compare each piece with the scan (links in `notes`). That comparison is your §8.5 item 6.
-- Pieces originally in Hán (bài 103, 105–110) have "translator unknown" and cannot pass §8.3 until you name the translator.
+- Pieces originally in Hán: the 1930 book names each translator under the piece (recorded in `data/qvtd-map.json`).
+  Phan Kế Bính (103), Nguyễn Hữu Tiến (107), Dương Quảng Hàm (108) are safe. Trần Trọng Kim (105 Hịch, 106 Bình Ngô đại cáo, d. 1953) is **not** safe in the US. Trần Văn Ngoạn (109, 110): years unknown.
 - Re-running the import never touches a file you have proofread or reviewed.
 
 ## About the drafts typed from memory

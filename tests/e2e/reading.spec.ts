@@ -65,3 +65,13 @@ test('poem lines never wrap on a small phone, so they stay aligned', async ({ br
   }
   await context.close();
 });
+
+test('can be added to a phone home screen (manifest + icons)', async ({ page, request }) => {
+  await page.goto('/');
+  const href = await page.locator('link[rel="manifest"]').getAttribute('href');
+  const manifest = await (await request.get(href!)).json();
+  expect(manifest).toMatchObject({ name: 'Két Sách', start_url: '/', display: 'standalone' });
+  for (const icon of manifest.icons) expect((await request.get(icon.src)).status()).toBe(200);
+  const apple = await page.locator('link[rel="apple-touch-icon"]').getAttribute('href');
+  expect((await request.get(apple!)).status()).toBe(200);
+});

@@ -9,8 +9,9 @@ authors:
     born: 1791
     died: 1841
 translators:
-  - name: Chưa rõ người dịch (bản dịch in trong Quốc văn trích diễm)
-    died: null
+  - name: Phan Kế Bính
+    born: 1875
+    died: 1921
 retellers: []
 source:
   name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
@@ -18,14 +19,14 @@ source:
   revision: 88897
   edition: bài 103
 copyright:
-  vn: protected
-  au: protected
-  us: protected
+  vn: free
+  au: free
+  us: free
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 103. Theme proposed by Claude: confirm. Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/171 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/172 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/173 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 103. Theme proposed by Claude: confirm. Translator: Phan Kế Bính. Named in Quốc văn trích diễm (1930) under the piece. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/171 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/172 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/173 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Chiếu rằng, trẫm nghe:
 

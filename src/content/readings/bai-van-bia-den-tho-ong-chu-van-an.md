@@ -9,8 +9,9 @@ authors:
     born: 1684
     died: 1758
 translators:
-  - name: Chưa rõ người dịch (bản dịch in trong Quốc văn trích diễm)
-    died: null
+  - name: Dương Quảng Hàm
+    born: 1898
+    died: 1946
 retellers: []
 source:
   name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
@@ -18,14 +19,14 @@ source:
   revision: 88902
   edition: bài 108
 copyright:
-  vn: protected
-  au: protected
-  us: protected
+  vn: free
+  au: free
+  us: free
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 108. Theme proposed by Claude: confirm. Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/185 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/186 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Tiên sinh, Niên hiệu. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 108. Theme proposed by Claude: confirm. Translator: Dương Quảng Hàm. Named in Quốc văn trích diễm (1930) under the piece. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/185 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/186 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Tiên sinh, Niên hiệu. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Tiên sinh họ Chu húy là An, người huyện Thanh Đàm xưa. Ở về đời Trần, trải bốn đời vua. Sau ẩn về ở núi Chí Linh, được phong tặng là Văn Trinh Công và được tùng tự ở văn miếu. Đền này là chỗ thờ riêng ngài, tục truyền là nơi ngài giảng học khi xưa. Mấy đời đều có gia phong, đến nay thờ làm phúc thần. Xưa có bia chép sự tích ngài, sau lâu ngày chữ đã mòn cả. Nay dân làng phụng thờ lại, đến xin tôi soạn lại. Tôi là kẻ hậu sinh, lại là người đồng huyện, không dám vì mình còn thiển vụng mà từ chối. Vậy xin chắp tay làm bài tự này.
 

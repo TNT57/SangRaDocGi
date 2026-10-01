@@ -29,6 +29,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString();
     <meta name="theme-color" content="#f5f0e6" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#13151a" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- "Add to Home Screen": opens full screen with its own icon, like an app -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Két Sách" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="vi_VN" />

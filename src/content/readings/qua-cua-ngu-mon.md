@@ -7,6 +7,8 @@ form: verse
 authors:
   - name: Phạm Thấu
     died: null
+    diedBy: 1849
+    evidence: "Wikisource (Tác gia:Phạm Thấu): youngest son of Phạm Công Thế, who was executed in 1738, so born by about 1739; nobody lives past 110."
 translators: []
 retellers: []
 source:
@@ -15,14 +17,14 @@ source:
   revision: 88838
   edition: bài 46
 copyright:
-  vn: protected
-  au: protected
-  us: protected
+  vn: free
+  au: free
+  us: free
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 46. Theme proposed by Claude: confirm. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/56 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/57 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Nền nếp, Lễ văn. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 46. Theme proposed by Claude: confirm. Phạm Thấu: died no later than 1849 (Wikisource (Tác gia:Phạm Thấu): youngest son of Phạm Công Thế, who was executed in 1738, so born by about 1739; nobody lives past 110.). Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/56 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/57 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Nền nếp, Lễ văn. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Chợt qua năm cửa động lòng thơ,
 Rồng đá sao rầy gọi biếng thưa?

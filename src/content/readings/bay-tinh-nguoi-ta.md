@@ -9,8 +9,9 @@ authors:
     born: 1744
     died: 1818
 translators:
-  - name: Chưa rõ người dịch (bản dịch in trong Quốc văn trích diễm)
+  - name: Trần Văn Ngoạn
     died: null
+    evidence: Named as translator in Quốc văn trích diễm (bài 109 cites Nam Phong số 19). Life years not found on Wikisource.
 retellers: []
 source:
   name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
@@ -25,7 +26,7 @@ heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 109. Theme proposed by Claude: confirm. Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/187 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/188 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/189 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 109. Theme proposed by Claude: confirm. Translator: Trần Văn Ngoạn. Named in Quốc văn trích diễm (1930) under the piece. Trần Văn Ngoạn: death year not found yet, so §8.5 items 2–3 fail. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/187 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/188 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/189 Old hyphenated spelling was modernised automatically. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Bảy tình là: mừng, giận, thương, sợ, yêu, ghét và muốn, đã là người không ai không có, nếu buông thả không biết đường ngăn giữ lại, thời hỏng mất tính hay, mà biết cách trị, thời tình phát hiện ra, đều là tính hay cả. Cách trị nên như thế nào? Nên như sau này.
 

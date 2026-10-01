@@ -11,7 +11,7 @@
  */
 export type Status = 'free' | 'protected';
 export type Flags = { vn: Status; au: Status; us: Status };
-export type Person = { name: string; died: number | null; folk?: boolean };
+export type Person = { name: string; died: number | null; diedBy?: number; folk?: boolean };
 
 export const US_CUTOFF = 1947;
 
@@ -29,7 +29,8 @@ const FREE: Flags = { vn: 'free', au: 'free', us: 'free' };
 /** Combine people: a reading is free in a country only if every author/translator/reteller is. Folk = free. */
 export function flagsForPeople(people: Person[], year = new Date().getFullYear()): Flags {
   return people.reduce<Flags>((acc, p) => {
-    const f = p.folk ? FREE : flagsForDeath(p.died, year);
+    // An evidenced upper bound ("died no later than") is enough for these yes/no rules.
+    const f = p.folk ? FREE : flagsForDeath(p.died ?? p.diedBy ?? null, year);
     return {
       vn: acc.vn === 'free' && f.vn === 'free' ? 'free' : 'protected',
       au: acc.au === 'free' && f.au === 'free' ? 'free' : 'protected',

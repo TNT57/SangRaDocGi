@@ -37,8 +37,9 @@ export type FameTable = Record<string, Partial<FameInput> & { wikiArticle?: stri
 
 export function personLine(p: PersonData): string {
   if (p.folk) return p.name;
-  const range = `${p.born ?? '?'}–${p.died ?? ''}`;
-  const years = p.born || p.died ? ` (${p.approx ? 'khoảng ' : ''}${range})` : '';
+  const end = p.died ?? (p.diedBy !== undefined ? `trước ${p.diedBy + 1}` : '');
+  const range = `${p.born ?? '?'}–${end}`;
+  const years = p.born || p.died || p.diedBy ? ` (${p.approx ? 'khoảng ' : ''}${range})` : '';
   return `${p.name}${years}`;
 }
 

@@ -20,6 +20,10 @@ const person = z.object({
   folk: z.boolean().optional(),
   /** Years are traditional estimates (shown as "khoảng"). */
   approx: z.boolean().optional(),
+  /** Death year unknown, but certainly no later than this (needs `evidence`). */
+  diedBy: z.number().int().optional(),
+  /** Where the dates or the upper bound come from. */
+  evidence: z.string().optional(),
 });
 
 const status = z.enum(['free', 'protected']);

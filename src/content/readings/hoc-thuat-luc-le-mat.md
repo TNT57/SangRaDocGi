@@ -8,9 +8,11 @@ authors:
   - name: Phạm Đình Hổ
     born: 1768
     died: 1839
+    evidence: Commonly cited 1768–1839; Quốc văn trích diễm gives birth as 1770.
 translators:
-  - name: Chưa rõ người dịch (bản dịch in trong Quốc văn trích diễm)
+  - name: Trần Văn Ngoạn
     died: null
+    evidence: Named as translator in Quốc văn trích diễm (bài 109 cites Nam Phong số 19). Life years not found on Wikisource.
 retellers: []
 source:
   name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
@@ -25,7 +27,7 @@ heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 110. Theme proposed by Claude: confirm. Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/189 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/190 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Học thuật. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 110. Theme proposed by Claude: confirm. Translator: Trần Văn Ngoạn. Named in Quốc văn trích diễm (1930) under the piece. Trần Văn Ngoạn: death year not found yet, so §8.5 items 2–3 fail. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/189 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/190 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Học thuật. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Xem các sách vở đời xưa chép lại, như là vua Vũ nghe được câu nói hay thời sụp xuống lạy, ông Chu Công 2 coi mình lúc nào cũng như không đủ, ông Nhan Tử 3 điều gì chưa biết, dù người kém mình cũng chịu hỏi, trong bụng có cũng như không, đầy cũng như vơi. Ôi! ông Vũ, ông Chu, đã làm vua quan giúp cho đời bấy giờ được nhiều công việc, ông Nhan Tử dù không ra làm quan cũng truyền được đạo thánh có công với đời sau; mà các ông ấy tự xử rất là nhũn nhặn như thế, có phải cố ý làm như thế để cầu tiếng khen của đời đâu? Thật là có đức rất khiêm nhường, không biết mình là thánh vậy.
 

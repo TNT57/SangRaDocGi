@@ -9,8 +9,9 @@ authors:
     born: 1228
     died: 1300
 translators:
-  - name: Chưa rõ người dịch (bản dịch in trong Quốc văn trích diễm)
-    died: null
+  - name: Trần Trọng Kim
+    born: 1883
+    died: 1953
 retellers: []
 source:
   name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
@@ -18,14 +19,14 @@ source:
   revision: 88899
   edition: bài 105
 copyright:
-  vn: protected
-  au: protected
+  vn: free
+  au: free
   us: protected
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 105. Theme proposed by Claude: confirm. Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/177 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/178 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/179 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/180 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/181 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Giả sử, Tì tướng, Tùy tướng. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 105. Theme proposed by Claude: confirm. Translator: Trần Trọng Kim. Named in Quốc văn trích diễm (1930) under the piece. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/177 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/178 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/179 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/180 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/181 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Giả sử, Tì tướng, Tùy tướng. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Ta thường nghe chuyện: Kỷ Tín 紀 信 liều thân chịu chết thay cho vua Cao Đế; Do Vu 由 于 lấy mình đỡ ngọn dáo cho vua Chiêu Vương; Dự Nhượng 豫 讓 nuốt than để báo thù cho chủ; Thân Khoái 申 蒯 chặt tay để cứu nạn cho nước; Kính Đức 敬 德 là một chức quan còn nhỏ, mà liều thân cứu vua Thái Tôn được thoát vòng vây; Kiểu Khanh 杲 卿 là một bề tôi ở xa, mà kể tội mắng thằng Lộc Sơn 祿 山 là quân nghịch tặc. Các bậc trung thần nghĩa sĩ ngày xưa, bỏ mình vì nước, đời nào không có? Giả sử mấy ông ấy cũng cứ bo bo theo lối thường tình, chết già ở só nhà, thì sao cho lưu danh sử sách đến nghìn muôn đời như thế được?
 

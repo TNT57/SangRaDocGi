@@ -9,8 +9,9 @@ authors:
     born: 1380
     died: 1442
 translators:
-  - name: Chưa rõ người dịch (bản dịch in trong Quốc văn trích diễm)
-    died: null
+  - name: Trần Trọng Kim
+    born: 1883
+    died: 1953
 retellers: []
 source:
   name: Quốc văn trích diễm (Dương Quảng Hàm, in lần thứ tư 1930), Wikisource
@@ -18,14 +19,14 @@ source:
   revision: 88900
   edition: bài 106
 copyright:
-  vn: protected
-  au: protected
+  vn: free
+  au: free
   us: protected
 heavy: null
 hook: null
 proofread: null
 review: null
-notes: "Imported from Quốc văn trích diễm, bài 106. Theme proposed by Claude: confirm. Originally written in Hán; the translator is not named. It cannot pass §8.3 until the translator and their death year are known. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/181 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/182 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/183 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Thần nhân. The 1930 edition's footnotes were removed (never copy textbook notes)."
+notes: "Imported from Quốc văn trích diễm, bài 106. Theme proposed by Claude: confirm. Translator: Trần Trọng Kim. Named in Quốc văn trích diễm (1930) under the piece. Wikisource marks this transcription as not proofread (quality 1/4): compare with the scan. Scan: https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/181 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/182 https://vi.wikisource.org/wiki/Trang%3AQuoc_van_trich_diem_1930.pdf/183 Old hyphenated spelling was modernised automatically. Check capitals at line starts: Thần nhân. The 1930 edition's footnotes were removed (never copy textbook notes)."
 ---
 Việc nhân nghĩa cốt nhất ở yên dân, quân điếu phạt không gì bằng trừ bạo.
 
